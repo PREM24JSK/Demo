@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "982267334003",
+    "project_id": "fir-6b6c4",
+    "storage_bucket": "fir-6b6c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982267334003:android:bb16e20c33fc68ea04c906",
+        "android_client_info": {
+          "package_name": "prem.world.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982267334003-eiskt99abc9hu6jr5pd2k0u2d2fq4mbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK1WzQvCsvo9dlBr4e6iGieNq5WUSR38Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982267334003-eiskt99abc9hu6jr5pd2k0u2d2fq4mbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="text_loginActivity_already_have_a_account">Create Account</string>
+    <string name="text_loginActivity_sign_in">Sign In</string>
+    <string name="text_loginActivity_createAccount">create a account</string>
+    <string name="text_loginActivity_sign_up">Sign Up</string>
+    <string name="enter_email_id">Enter Email ID</string>
+    <string name="enter_mobile">Enter Mobile No</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="text_loginTab_sign_in">Sign in</string>
+</resources>

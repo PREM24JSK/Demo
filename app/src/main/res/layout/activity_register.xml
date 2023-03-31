@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/register_titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:padding="5dp"
+            android:text="@string/text_loginActivity_sign_up"
+            android:textSize="30sp"
+            app:autoSizeTextType="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.circularreveal.CircularRevealLinearLayout
+        android:id="@+id/register_EntryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_titleLayout"
+        app:layout_constraintVertical_bias="0">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_Text_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:startIconDrawable="@drawable/ic_edit_48">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_Edit_Email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hint_email_id"
+                android:importantForAutofill="no"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:minHeight="42dp"
+                android:textColorHint="#004D40"
+                android:windowSoftInputMode="adjustResize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_Text_Mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:startIconDrawable="@drawable/ic_edit_48">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_Edit_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_mobile"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:minHeight="42dp"
+                android:textColorHint="#004D40"
+                android:windowSoftInputMode="adjustResize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_Text_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_lock_48">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_Edit_Password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:hint="@string/enter_password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:maxLength="15"
+
+                android:windowSoftInputMode="adjustResize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_btn_Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minHeight="48dp"
+        android:padding="15dp"
+        android:text="@string/text_loginActivity_sign_up"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_EntryLayout"
+        app:layout_constraintVertical_bias="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
